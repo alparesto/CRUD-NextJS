@@ -21,7 +21,7 @@ export default function  UpdateProduct(product: Product) {
 
         setIsMutating(true)
 
-        await fetch(`http://localhost:4500/products/${product.id}`, {
+        await fetch(`https://sparkling-erin-gosling.cyclic.app/products/${product.id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json"

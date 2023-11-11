@@ -15,7 +15,7 @@ export default function  AddProduct() {
 
         setIsMutating(true)
 
-        await fetch('http://localhost:4500/products', {
+        await fetch('https://sparkling-erin-gosling.cyclic.app/products', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

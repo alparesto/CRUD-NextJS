@@ -13,7 +13,7 @@ type Product = {
 }
 
 async function getProducts() {
-    const res = await fetch('http://localhost:4500/products', {cache: 'no-store'});
+    const res = await fetch('https://sparkling-erin-gosling.cyclic.app/products', {cache: 'no-store'});
     return res.json();
 }
 

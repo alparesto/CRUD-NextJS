@@ -17,7 +17,7 @@ export default function  DeleteProduct(product: Product) {
     async function handleDelete(productId: number) {
         setIsMutating(true)
 
-        await fetch(`http://localhost:4500/products/${productId}`, {
+        await fetch(`https://sparkling-erin-gosling.cyclic.app/products/${productId}`, {
             method: "DELETE"
         })
 
