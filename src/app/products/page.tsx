@@ -19,6 +19,7 @@ async function getProducts() {
 
 export default async function ProductList() {
     const products: Product[] = await getProducts()
+    
     return (
         <div className="py-10 px-10">
             <div className="py-2">
